@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Sourcer - Buy Now</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            background-color: black;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        #content {
+            max-width: 600px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+        form {
+            margin-top: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        canvas {
+            display: block;
+            vertical-align: bottom;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        input[type="image"] {
+            width: 200px; /* Adjust button width */
+            height: auto; /* Maintain aspect ratio */
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<div id="content">
+    <h1>Welcome to Internet Sourcer</h1>
+
+    <p>Get any site sourced for just $1!</p>
+
+    <p>We offer the following pricing tiers:</p>
+    <ul>
+        <li><strong>Basic Package:</strong> Source any website of your choice for $1.</li>
+        <li><strong>Premium Package:</strong> Get up to 5 websites sourced for $4.99.</li>
+        <li><strong>Enterprise Package:</strong> Unlimited website sourcing for $15.99</li>
+    </ul>
+
+    <p>Click the button below to purchase our service:</p>
+
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="int4ern3tsourcer@gmail.com">
+        <input type="hidden" name="item_name" value="Internet Sourcer Service">
+        <input type="hidden" name="amount" value="1.00">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="button_subtype" value="services">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="cn" value="Add special instructions to the seller:">
+        <input type="hidden" name="no_shipping" value="1">
+        <input type="hidden" name="rm" value="1">
+        <input type="hidden" name="return" value="YOUR_RETURN_URL">
+        <input type="hidden" name="cancel_return" value="YOUR_CANCEL_URL">
+        <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_LG.gif:NonHosted">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+
+    <p><strong>Important Information:</strong></p>
+    <ul>
+        <li>By clicking "Buy Now," you accept that even if we cannot source your requested site, we will issue a refund.</li>
+        <li>In the PayPal payment, please include details of the type of site you want sourced and your email address.</li>
+        <li>We source sites from across the internet, ranging from standard web domains to onion (dark web) sites. Your request can be anything, and we won't ask questions.</li>
+        <li>We strictly prohibit sourcing child pornography. Any such requests will not be fulfilled.</li>
+    </ul>
+
+    <p>Please feel free to contact us at <a href="mailto:int4ern3tsourcer@gmail.com">int4ern3tsourcer@gmail.com</a> for any inquiries or assistance.</p>
+</div>
+
+<!-- Particles.js Library -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+    particlesJS("particles-js", {
+        "particles": {
+            "number": {
+                "value": 50,
+                "density": {
+                    "enable": true,
+                    "value_area": 800
+                }
+            },
+            "color": {
+                "value": "#ffffff"
+            },
+            "shape": {
+                "type": "star",
+                "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                },
+                "polygon": {
+                    "nb_sides": 5
+                }
+            },
+            "opacity": {
+                "value": 0.5,
+                "random": true,
+                "anim": {
+                    "enable": true,
+                    "speed": 1,
+                    "opacity_min": 0.1,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 3,
+                "random": true,
+                "anim": {
+                    "enable": true,
+                    "speed": 2,
+                    "size_min": 0.1,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": false
+            },
+            "move": {
+                "enable": true,
+                "random": true,
+                "speed": 1,
+                "direction": "none",
+                "out_mode": "out",
+                "bounce": false
+            }
+        },
+        "interactivity": {
+            "events": {
+                "onhover": {
+                    "enable": false,
+                    "mode": "repulse"
+                }
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
